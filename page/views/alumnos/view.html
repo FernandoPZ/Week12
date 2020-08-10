@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <h1 class="text-light bg-dark" , "text-center">Ver alumno</h1>
+  </header>
+  <body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<br>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="/list">Lista de alumnos<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/insert">Insertar alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/delete">Borrar alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/view">Ver alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/update">Modificar alumno<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<form>
+  <div class="form-group">
+    <label for="matricula">Matricula del alumno</label>
+    <input type="number" readonly class="form-control" id="matricula" name="matricula" value="$result['matricula']">
+  </div>
+
+  <div class="form-group">
+    <label for="nombre">Nombre del alumno</label>
+    <input type="text" readonly class="form-control" id="nombre" name="nombre" value="$result['nombre']">
+  </div>
+
+  <div class="form-group">
+    <label for="papellido">Primer apellido</label>
+    <input type="text" readonly class="form-control" id="pri_ap" name="pri_ap" value="$result['pri_ap']">
+  </div>
+
+  <div class="form-group">
+    <label for="sapellido">Segundo apellido</label>
+    <input type="text" readonly class="form-control" id="seg_ap" name="seg_ap" value="$result['seg_ap']">
+  </div>
+
+  <div class="form-group">
+    <label for="edad">Edad</label>
+    <input type="number" readonly class="form-control" id="age" name="age" value="$result['age']">
+  </div>
+
+  <div class="form-group">
+    <label for="naci">Fecha de nacimiento</label>
+    <input type="text" readonly class="form-control" id="fdate" name="fdate" value="$result['fdate']">
+  </div>
+
+  <div class="form-group">
+    <label for="genero">Sexo</label>
+    <input type="text" readonly class="form-control" id="gender" name="gender" value="$result['gender']">
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado</label>
+    <input type="text" readonly class="form-control" id="state" name="state" value="$result['state']">
+  </div>
+</form>  
+<body background="https://fondosmil.com/fondo/3879.jpg">
+</body>
+</html>

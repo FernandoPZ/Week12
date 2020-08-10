@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<h1 class="text-light bg-dark", "text-center">Insertar alumno</h1>
+</header>
+
+<body>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	 crossorigin="anonymous">
+   <br>
+   <br>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="/list">Lista de alumnos<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/insert">Insertar alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/delete">Borrar alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/view">Ver alumno<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="/update">Modificar alumno<span class="sr-only">(current)</span></a>
+      </li>
+    
+    </ul>
+  </div>
+
+</nav>
+  <form method="POST" action="">
+      <div class="form-group, text-light">
+      <label for="Controll">Matricula</label>
+      <input type="number" class="form-control" id="matricula" placeholder="1718110405">
+    </div>
+    <div class="form-group, text-light">
+      <label for="Controll">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Fernando">
+    </div>
+    <div class="form-group, text-light">
+      <label for="Controll">Primer apellido</label>
+      <input type="text" class="form-control" id="papellido" name="papellido" placeholder="Perez">
+    </div>
+    <div class="form-group, text-light">
+      <label for="Controll">Segundo apellido</label>
+      <input type="text" class="form-control" id="sapellido" name="sapellido" placeholder="Suarez">
+    </div>
+    <div class="form-group, text-light">
+      <label for="Controll">Edad</label>
+      <input type="number" class="form-control" id="edad" name="edad" placeholder="22">
+    </div>
+    <div class="form-group, text-light">
+      <label for="Controll">Fecha de nacimiento</label>
+      <input type="date" class="form-control" id="naci" name="naci" placeholder="">
+    </div>
+    <div>
+      <label for="Controll">Genero</label>
+      <select class="form-control" id="genero" name="genero" required>
+        <option selected disabled value="">Seleccionar Genero...</option>
+        <option>Hombre</option>
+        <option>Mujer</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div>
+      <label for="Controll">Estado</label>
+      <select class="form-control" id="estado" name="estado" required>
+        <option selected disabled value="">Seleccionar Estado...</option>
+        <option>Hidalgo</option>
+        <option>Veracruz</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <input class="btn btn-success btn-lg btn-block" type="submit" value="Guardar">
+    <body background="https://fondosmil.com/fondo/3879.jpg">
+  </body>
+</html>
